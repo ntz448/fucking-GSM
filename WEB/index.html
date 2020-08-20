@@ -2,30 +2,45 @@
 <head>
 	<title>WEB</title>
 	<meta charset = "utf-8">
+	<style>
+	    h1{
+	    	border-bottom:red 9px solid;
+	    	margin-bottom: 0;
+	    	font-family: 'Do Hyeon', sans-serif;
+	    }
+        #g{
+        	display:grid;
+        	grid-template-columns:1fr 1fr 1fr;
+
+        }
+        ol{
+        	border-right:5px solid red;
+            margin-top: 0;
+        }
+        body{
+        background-image:url('https://pbs.twimg.com/profile_images/1114005459998924802/mhs3-lpx.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        }
+	</style>
 <head>
 	
-<body>
+<body id="bodytag">
 
 <h1><a href="index.html">WEB!</a></h1>
 
-<ol>
-<li><a href = "1.html.html">html</a></li>
-<li><a href = "2.html">css</a></li>
-<li><a href = "3.html">javascript</a></li>
-</ol>
-
-<h2>html</h2>
-html is 개인주의야 머리부터 발끝까지다 다입수 
-you are fucking weak. 이 띨빵새끼야 
-
-<h2>css</h2>
-css is 개인주의야 머리부터 발끝까지다 다입수 
-you are fucking weak. 이 띨빵새끼야 
-
-<h2>javascript</h2>
-javascript is 개인주의야 머리부터 발끝까지다 다입수 
-you are fucking weak. 이 띨빵새끼야 
-
-
+<div id="g">
+	<ol>
+	<div id = "contain">
+		<li><a href = "1.html.html">html</a></li>
+		<li><a href = "2.html">css</a></li>
+		<li><a href = "3.html">javascript</a></li>
+	</div>
+	</ol>
+	<div id="v">
+       WEB is world Wide WEB
+	<div>
+</div>
+<input type="button" value="배경 바꾸기" onclick="document.querySelector('#bodytag').style.background='black'" >
 </body>
 </html>
